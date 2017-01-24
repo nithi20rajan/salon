@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<title>Untitled Document</title> 
+<style type="text/css"> 
+#container {
+	width: auto;
+	background: #FFFFFF;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: left;
+	height: 100%;
+	overflow: hidden;
+	border-top-width: 30%;
+	border-right-width: 30%;
+	border-bottom-width: 30%;
+	border-left-width: 30%;
+} 
+#left-sidebar {
+	float: left;
+	width: 200px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	overflow: auto;
+} 
+#right-sidebar {
+	float: right;
+	width: 377px;
+	background: #EBEBEB;
+	margin-right: 50px;
+	padding: 15px 10px 15px 20px;
+	position: absolute;
+	left: 856px;
+	top: 30px;
+} 
+#mainContent {
+	background-color:#999999;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 220px;
+	padding-top: 0;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	position: absolute;
+	left: 78px;
+	top: 30px;
+	width: 483px;
+}
+#shop_name_list-rw-1 {
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+#shop_name-1 {
+	float: left;
+	margin-bottom: 2px;
+}
+#shop_location {
+	float: left;
+	padding: 5px;
+	margin-right: 20px;
+	position: static;
+}
+#shop_preview_pic{
+	background-color: #fff;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    position: none;
+    min-height: 10px;
+    float: right;
+	vertical-align: middle;
+}
+#select_gender {
+	float: left;
+	width: 200px;
+	margin-bottom: 10px;
+	background: #EBEBBB;
+	padding-bottom: 15px;
+	display:block;
+	border: ridge;
+}
+#list_services {
+	float: left;
+	width: 200px;
+	background: #EBEBCB;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+	border: ridge;
+	overflow: scroll;
+}
+#list_area {
+	float: left;
+	width: 200px;
+	background: #EBEBBB;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+	border: ridge;
+	overflow: scroll;
+}
+</style> 
+</head> 
+<body> 
+<!--container div tag starts --> 
+<div class="container" id="container"> 
+    <!--left sidebar div tag starts --> 
+    <div class="filter" id="left-sidebar"> 
+    	<div id="select_gender">
+			<p><strong>Looking for:</strong></p>
+      			<form id="form1" name="form1" method="post" action="">
+       			<p align="left">Man <input name="checkbox" type="checkbox" value="checkbox" /></p>
+       			<p align="left">Woman <input type="checkbox" name="checkbox" value="checkbox" /></p>
+        		<p align="left">Kids <input type="checkbox" name="checkbox" value="checkbox" /></p>
+        		<p align="left">Unisex <input type="checkbox" name="checkbox" value="checkbox" />  </p>
+   			 	</form> 
+		</div>
+		<div id="list_services">
+			<strong>Services:</strong></p>
+      		<p><input name="textfield2" type="text" value="type service name"/></p>
+	  		<p>List from DB</p>
+		</div>
+		<div id="list_area">
+			<strong>Area:</strong></p>
+      		<p><input name="textfield" type="text" value="type your area" /></p>
+	  		<p>List from DB </p>
+		</div> 
+  </div><!-- left sidebar div tag ends -->
+	   <!-- right sidebar div tag starts --> 
+  <div id="right-sidebar"> 
+    	<div class="description-container" itemprop="description">
+        	<p>Advertisements 1 </p>
+		</div>
+  </div> <!-- right sidebar div tag ends --> 
+     <!--mainContent div tag starts --> 
+    <div id="mainContent"> 
+    	<div id="shop_name_list-rw-1" href="/sample shop template latest.html">
+			<div id="shop_name-1">
+            	<h2><a title="ShopName1">ShopName1</a></h2>
+			</div>
+			<div id="shop_location">
+            	<h3><a title="Location">Location</a></h3>
+			</div>
+            <div id="shop_preview_pic">
+            	<img src="img/about-7.jpg" alt="shop_pic" width="140" height="140" class="preview"></a>
+			</div>
+		</div><!-- shop_name_list-rw-1 div tag ends -->
+  </div><!-- mainContent div tag ends -->
+</div><!-- container div tag ends -->
+</body>
+</html>
