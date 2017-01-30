@@ -7,6 +7,21 @@
   <title>Holiday - templatemo</title>
 </head>
 <style>
+#header {
+	padding: 10px 16px;
+    background-color: #999966;
+    color: white;
+}
+#footer {
+	padding: 5px 16px;
+    background-color: #999966;
+    color: white;
+}
+#footer_clr {
+	background-color: #669999;
+	padding: 10px 16px;
+	margin: auto;
+}
 #bus_list_reg {
 	max-width: 500px;
     margin: auto;
@@ -14,8 +29,35 @@
     padding: 10px;
 	border:ridge;
 }
+#companyname {
+	font-size: large;
+	font-weight: bolder;
+}
+#qlink {
+	position: relative;
+	color: #990033;
+}
+#AbtComp {
+	position: absolute;
+	left: 211px;
+	top: 642px;
+	height: 117px;
+	color: #990033;
+}
+a:link {
+    color: black;
+}
+a:hover {
+    color: white;
+}
+
 </style>
 <body>
+<div class="page-header" id="header">
+  <div class="companyname" id="companyname">
+  <p>READY GLAM</p>
+  </div>
+</div>
 	<div class="container" id="bus_list_reg">
 		<table>
 				<tr>
@@ -80,7 +122,34 @@
 				<tr>
 					<td colspan="2" align="center"><input type="submit" name="submit" value="Submit Details" /></td>
 				</tr>
-			</table>
+	  </table>
 	</div>
+	<div class="footer_clr" id="footer_clr"></div>
+<div class="footer-container" id="footer">
+          <div class="col-lg-2 col-mb-2 col-sm-2" id="qlink">
+                <div class="widget_text">
+                    <h3>Quick Links</h3>
+                    <div class="textwidget">
+                        <a href="/home.html" color="black">Home</a>
+                        <br />
+                        <a href="/about.html">About Us</a>
+                        <br /> 
+						<!-- create support link -->                       
+                        <a href="/Support/index/">Support</a>
+                        <br />
+                        <a href="/contact.html">Contact Us</a>                    </div>
+                </div>
+  </div>
+            <div class="col-lg-2 col-mb-2 col-sm-2" id="AbtComp" >
+                <div class="widget_text">
+                    <h3>About Company Name </h3>
+                    <div class="textwidget">
+                        Moto of company <br />
+                        <a style="color: #2ba8db;" href="mailto:emailid@abc?Subject=Hi%20buddy" target="_top">
+                            emailid@abc.com</a>                  </div>
+                </div>
+  </div>
+</div>
+	 </div>
 </body>
 </html>
