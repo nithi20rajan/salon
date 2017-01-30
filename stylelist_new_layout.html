@@ -4,11 +4,47 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
 <title>Untitled Document</title> 
 <style type="text/css"> 
+#header {
+	padding: 10px 16px;
+    background-color: #999966;
+    color: white;
+}
+#footer {
+	padding: 5px 16px;
+    background-color: #999966;
+    color: white;
+}
+#footer_clr {
+	background-color: #669999;
+	padding: 10px 16px;
+	margin: auto;
+}
+#companyname {
+	font-size: large;
+	font-weight: bolder;
+}
+#qlink {
+	position: relative;
+	color: #990033;
+}
+#AbtComp {
+	position: static;
+	left: 211px;
+	top: 634px;
+	height: 117px;
+	color: #990033;
+}
+a:link {
+    color: black;
+}
+a:hover {
+    color: white;
+}
 #container {
 	width: auto;
 	background: #FFFFFF;
 	margin-left: 150px;
-	margin-right: auto;
+	margin-right: 150px;
 	text-align: left;
 	height: 100%;
 	overflow: hidden;
@@ -17,6 +53,7 @@
 	border-bottom-width: 30%;
 	border-left-width: 30%;
 	border-bottom-style: none;
+	border: ridge;
 } 
 #left-sidebar {
 	float: left;
@@ -29,13 +66,16 @@
 } 
 #right-sidebar {
 	float: right;
-	width: 377px;
-	background: #EBEBEB;
-	margin-right: 50px;
-	padding: 15px 10px 15px 20px;
+	width: 400px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	background-color: #6666FF;
+	margin-top: 15px;
 	position: absolute;
-	left: 1029px;
-	top: 32px;
+	left: 1011px;
+	top: 78px;
 } 
 #mainContent {
 	background-color:#999999;
@@ -48,14 +88,16 @@
 	padding-bottom: 20px;
 	padding-left: 20px;
 	position: absolute;
-	left: 203px;
-	top: 33px;
+	left: 205px;
+	top: 93px;
 	width: 522px;
+	box-shadow: 10px 10px 5px #888888;
 }
 #shop_name_list-rw-1 {
 	float: left;
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-bottom: 10px;
+	position: static;
 }
 #shop_name-1 {
 	float: left;
@@ -65,16 +107,21 @@
 	float: left;
 	padding: 5px;
 	margin-right: 20px;
-	position: static;
+	position: absolute;
+	width: 233px;
+	height: 18px;
+	left: 24px;
+	top: 48px;
 }
 #shop_preview_pic{
 	background-color: #fff;
-    border: 1px solid #d1d1d1;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-    position: none;
-    min-height: 10px;
-    float: right;
+	border: 1px solid #d1d1d1;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+	position: relative;
+	min-height: 10px;
+	float: right;
 	vertical-align: middle;
+	right: auto;
 }
 #select_gender {
 	float: left;
@@ -110,15 +157,20 @@
 </style> 
 </head> 
 <body> 
+<div class="page-header" id="header">
+  <div class="companyname" id="companyname">
+  <p>READY GLAM</p>
+  </div>
+</div>
 <!--container div tag starts --> 
 <div class="container" id="container"> 
-    <!--left sidebar div tag starts --> 
+	<!--left sidebar div tag starts --> 
     <div class="filter" id="left-sidebar"> 
     	<div id="select_gender">
 			<p><strong>Looking for:</strong></p>
       			<form id="form1" name="form1" method="post" action="">
-       			<p align="left">Man <input name="checkbox" type="checkbox" value="checkbox" /></p>
-       			<p align="left">Woman <input type="checkbox" name="checkbox" value="checkbox" /></p>
+       			<p align="left">Men <input name="checkbox" type="checkbox" value="checkbox" /></p>
+       			<p align="left">Women <input type="checkbox" name="checkbox" value="checkbox" /></p>
         		<p align="left">Kids <input type="checkbox" name="checkbox" value="checkbox" /></p>
         		<p align="left">Unisex <input type="checkbox" name="checkbox" value="checkbox" />  </p>
    			 	</form> 
@@ -139,21 +191,50 @@
     	<div class="description-container" itemprop="description">
         	<p>Advertisements 1 </p>
 		</div>
-  </div> <!-- right sidebar div tag ends --> 
+  </div> 
+  <!-- right sidebar div tag ends --> 
      <!--mainContent div tag starts --> 
     <div id="mainContent"> 
     	<div id="shop_name_list-rw-1" href="/sample shop template latest.html">
 			<div id="shop_name-1">
-            	<h2><a title="ShopName1">ShopName1</a></h2>
+            	<h2><a title="ShopName1">ShopName1:Test shopname one</a></h2>
 			</div>
+			
 			<div id="shop_location">
-            	<h3><a title="Location">Location</a></h3>
+            	<h3><a title="Location">Location: Test location</a></h3>
 			</div>
             <div id="shop_preview_pic">
-            	<img src="img/about-7.jpg" alt="shop_pic" width="140" height="140" class="preview"></a>
-			</div>
-		</div><!-- shop_name_list-rw-1 div tag ends -->
+            	<img src="img/about-7.jpg" alt="shop_pic" width="140" height="140" class="preview"></a>			</div>
+		</div>
+    	<!-- shop_name_list-rw-1 div tag ends -->
   </div><!-- mainContent div tag ends -->
 </div><!-- container div tag ends -->
+<div class="footer_clr" id="footer_clr"></div>
+<div class="footer-container" id="footer">
+          <div class="col-lg-2 col-mb-2 col-sm-2" id="qlink">
+                <div class="widget_text">
+                    <h3>Quick Links</h3>
+                    <div class="textwidget">
+                        <a href="/home.html" color="black">Home</a>
+                        <br />
+                        <a href="/about.html">About Us</a>
+                        <br /> 
+						<!-- create support link -->                       
+                        <a href="/Support/index/">Support</a>
+                        <br />
+                        <a href="/contact.html">Contact Us</a>                    
+					</div>
+               	</div>
+  </div>
+            <div class="col-lg-2 col-mb-2 col-sm-2" id="AbtComp" >
+                <div class="widget_text">
+                    <h3>About Company Name </h3>
+                    <div class="textwidget">
+                        Moto of company <br />
+                        <a style="color: #2ba8db;" href="mailto:emailid@abc?Subject=Hi%20buddy" target="_top">
+                            emailid@abc.com</a>					</div>
+                </div>
+  </div>
+</div>
 </body>
 </html>
